@@ -39,11 +39,11 @@
     </div>
     <section>
         <div class="container">
-            <h2>Entre em contato:</h2>
+            <h2>Insira seus dados para finalização da compra:</h2>
             <form>
                 <div class="form-campo">
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome">
+                    <input type="text" placeholder="Gabriel Guilherme" id="nome">
                 </div>
                 <div class="form-campo">
                     <label for="telefone">Telefone:</label>
@@ -51,15 +51,19 @@
                 </div>
                 <div class="form-campo">
                     <label for="email">Email:</label>
-                    <input type="email" id="email">
+                    <input type="email" placeholder="email@exemplo.com" id="email">
                 </div>
                 <div class="form-campo">
-                    <label for="veiculo-interesse">Veiculo de interesse:</label>
-                    <input type="text" id="veiculo-interesse">
+                    <label for="cpf">CPF:</label>
+                    <input type="cpf" id="cpf">
                 </div>
                 <div class="form-campo">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem"></textarea>
+                    <label for="endereço">Endereço completo:</label>
+                    <input type="endereco" placeholder="Rua, Número,Bairro, Cidade e Estado" id="endereco">
+                </div>
+                <div class="form-campo">
+                    <label for="cep">CEP:</label>
+                    <input type="cep" id="cep">
             </div>
             <button type="submit">Enviar</button>
         </form>
@@ -80,7 +84,9 @@
 
             $('#telefone').mask('(00) 00000-00000')
 
-            $('#veiculo-interesse').mask(' SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS')
+            $('#cpf').mask(' 000.000.000-00')
+
+            $('#cep').mask(' 0000-0000')
 
             $('#nome').mask('SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS')
 
