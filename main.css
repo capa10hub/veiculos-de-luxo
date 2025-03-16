@@ -58,12 +58,20 @@ h2 {
     margin-bottom: 5px;
 }
 
-.form-campo input {
+.form-campo input,
+.form-campo textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+
 
 .container button {
     background-color: #007bff;
